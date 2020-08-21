@@ -14,3 +14,21 @@ assert not c1p2.checkPermutation('abc', 'abcc')
 assert not c1p2.checkPermutation('abc', 'bbc')
 assert not c1p2.checkPermutation('kslqpwofhoeljasflkjppbn', 'bbcjalshdkjahsdkjaskjdh')
 print("Part 2 testing passed.")
+
+# test part 3
+assert c1p3.URLify('Mr John Smith     ', 13) == 'Mr%20John%20Smith'
+assert c1p3.URLify('tyler , the creator     ', 19) ==  'tyler%20,%20the%20creator'
+assert c1p3.URLify('hello world  ', 11) == 'hello%20world'
+print("Part 3 testing passed.")
+
+# test part 4
+
+# test part 5
+
+# test part 6
+
+# test part 7
+
+# test part 8
+
+# test part 9
