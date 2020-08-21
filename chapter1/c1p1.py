@@ -17,8 +17,3 @@ def allUnique(s):
             d[c] = False
 
     return True
-
-print(allUnique('Hello World'))
-print(allUnique('whats up'))
-print(allUnique('aaaaaaaaaaaaaaaaaaaaaa'))
-print(allUnique('abcdefghijklmnopqrstuvwxyz'))

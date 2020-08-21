@@ -8,3 +8,9 @@ assert c1p1.allUnique('abcdefghijklmnopqrstuvwxyz')
 print("Part 1 testing passed.")
 
 # test part 2
+assert c1p2.checkPermutation('abc', 'bac')
+assert c1p2.checkPermutation('abc', 'abc')
+assert not c1p2.checkPermutation('abc', 'abcc')
+assert not c1p2.checkPermutation('abc', 'bbc')
+assert not c1p2.checkPermutation('kslqpwofhoeljasflkjppbn', 'bbcjalshdkjahsdkjaskjdh')
+print("Part 2 testing passed.")
