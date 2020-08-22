@@ -28,6 +28,19 @@ assert not c1p4.palindrome_permutation('this aint a palindrome feller')
 print("Part 4 testing passed.")
 
 # test part 5
+assert c1p5.one_away('pale', 'ple')
+assert c1p5.one_away('pales', 'pale')
+assert c1p5.one_away('pale', 'bale')
+assert c1p5.one_away('pale', 'paale')
+assert c1p5.one_away('pale', 'ppale')
+assert c1p5.one_away('pale', 'pale')
+assert not c1p5.one_away('pale', 'blle')
+assert not c1p5.one_away('pale', 'balek')
+assert not c1p5.one_away('pale', 'aaaaaa')
+assert not c1p5.one_away('pale', 'bppale')
+assert not c1p5.one_away('pale', 'aa')
+assert not c1p5.one_away('papap', 'apapa')
+print("Part 5 testing passed.")
 
 # test part 6
 
