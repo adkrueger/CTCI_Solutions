@@ -7,6 +7,7 @@ def one_away(s1, s2):
     # my solution: go through each string with one number iterator
     # use this to check if either of the letters match: if they do, then move on
     # if they don't, then need to flag the missing/replaced letter
+    # should be O(n) time, as we just check the string over once in each case
     if s1==s2:
         return True
     elif abs(len(s1)-len(s2))>=2:
@@ -16,17 +17,17 @@ def one_away(s1, s2):
     if len(s1)!=len(s2):
         return check_smaller(s1, s2) if len(s1)<len(s2) else check_smaller(s2, s1)
     else:
+        # simply check each character against the other
         flag = 0
         j = 0
 
         for i in range(len(s1)):
+            j = i
             if s1[i] != s2[j]:
                 flag += 1
 
             if flag>1:
                 return False
-            
-            j = i + flag
         
         return True
 
