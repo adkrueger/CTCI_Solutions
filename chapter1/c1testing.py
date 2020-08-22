@@ -44,6 +44,15 @@ assert not c1p5.one_away('papap', 'apapa')
 print("Part 5 testing passed.")
 
 # test part 6
+assert c1p6.string_compression('aabcccccaaa') == 'a2b1c5a3'
+assert c1p6.string_compression('aabcccccaaaz') == 'a2b1c5a3z1'
+assert c1p6.string_compression('abcccccaaa') == 'a1b1c5a3'
+assert not c1p6.string_compression('aabcccccaaa') == 'a1b1c4a2'
+assert not c1p6.string_compression('aabcccccaaa') == 'a2b1c5a2'
+assert c1p6.string_compression('abca') == 'abca'
+assert c1p6.string_compression('aabbccaa') == 'aabbccaa'
+print("Part 6 testing passed.")
+
 
 # test part 7
 
