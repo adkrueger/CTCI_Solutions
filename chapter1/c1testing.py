@@ -55,6 +55,8 @@ print("Part 6 testing passed.")
 
 
 # test part 7
+assert c1p7.rotate_matrix([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) == [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
+print("Part 7 testing passed.")
 
 # test part 8
 
